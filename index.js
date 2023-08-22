@@ -22,7 +22,7 @@ calculate.addEventListener('click', () => {
      } else if (Number.parseInt(monthUserInput, 10) === 2 && dayUserInput > 29) {
         entryContainer.classList.add('day-error', 'invalid-day-error')
      } else {
-        entryContainer.classList.remove('day-error', 'invalid-day-error', 'empty-day-error', 'month-error', 'invalid-month-error', 'empty-month-error', 'year-error', 'invalid-year-error', 'empty-year-error')
+        entryContainer.classList.remove('day-error', 'invalid-day-error', 'empty-day-error')
      }
 })
 
@@ -35,7 +35,7 @@ calculate.addEventListener('click', () => {
     } else if (monthUserInput < 1 || monthUserInput > 12) {
         entryContainer.classList.add('month-error', 'invalid-month-error')
     } else {
-        entryContainer.classList.remove('day-error', 'invalid-day-error', 'empty-day-error', 'month-error', 'invalid-month-error', 'empty-month-error', 'year-error', 'invalid-year-error', 'empty-year-error')
+        entryContainer.classList.remove('month-error', 'invalid-month-error', 'empty-month-error')
     }
 })
 
@@ -48,7 +48,7 @@ calculate.addEventListener('click', () => {
     } else if (yearUserInput > currentYear) {
         entryContainer.classList.add('year-error', 'invalid-year-error')
     } else {
-        entryContainer.classList.remove('day-error', 'invalid-day-error', 'empty-day-error', 'month-error', 'invalid-month-error', 'empty-month-error', 'year-error', 'invalid-year-error', 'empty-year-error')
+        entryContainer.classList.remove('year-error', 'invalid-year-error', 'empty-year-error')
     }
 })
 
