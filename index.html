@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="/age-calculator-app-main/styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+
+  <div id="app-container">
+    <div id="entry-container" class="normal">
+      <div class="label-input">
+        <p class="label" id="day-label">Day</p>
+        <input type="text" placeholder="DD" id="day-input">
+        <p class="error-message" id="day-error">Must be a valid day</p>
+        <p class="error-message" id="empty-day">This field is required</p>
+        <p class="error-message">Must be a valid date</p>
+      </div>
+      <div class="label-input">
+        <p class="label" id="month-label">Month</p>
+        <input type="text" placeholder="MM" id="month-input">
+        <p class="error-message" id="month-error">Must be a valid month</p>
+        <p class="error-message" id="empty-month">This field is required</p>
+      </div>
+      <div class="label-input">
+        <p class="label" id="year-label">Year</p>
+        <input type="text" placeholder="YYYY" id="year-input">
+        <p class="error-message" id="year-error">Must be in the past</p>
+        <p class="error-message" id="empty-year">This field is required</p>
+      </div>
+    </div>
+    <div id="divider">
+      <div id="divider-line"></div>
+      <div id="image-circle">
+        <img src="/age-calculator-app-main/assets/images/icon-arrow.svg" alt="Calculate Button">
+      </div>
+    </div>
+    <div id="results-container">
+      <h1 class="result"><span class="result-value" id="years-value">--</span> years</h1>
+      <h1 class="result"><span class="result-value" id="months-value">--</span> months</h1>
+      <h1 class="result"><span class="result-value" id="days-value">--</span> days</h1>
+    </div>
+  </div>
+
+  <script src="/age-calculator-app-main/index.js"></script>
+
+</body>
+</html>

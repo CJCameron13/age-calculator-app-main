@@ -1,0 +1,167 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#app-container {
+    background-color: var(--White);
+    width: 840px;
+    padding: 40px;
+    border-radius: 25px 25px 100px 25px;
+}
+
+#entry-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.label {
+    color: var(--Smokey-grey);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 160px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border-radius: 10px;
+    border-color: var(--Light-grey);
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--Purple);
+}
+
+.error-message {
+    color: var(--Light-red);
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.normal .error-message {
+    display: none;
+}
+
+/* Day error states */
+
+.day-error #day-label {
+    color: var(--Light-red);
+}
+
+.day-error #day-input {
+    border-color: var(--Light-red);
+}
+
+.invalid-day-error #day-error {
+    display: block;
+}
+
+.empty-day-error #empty-day {
+    display: block;
+}
+
+/* Month error states */
+
+.month-error #month-label {
+    color: var(--Light-red);
+}
+
+.month-error #month-input {
+    border-color: var(--Light-red);
+}
+
+.empty-month-error #empty-month {
+    display: block;
+}
+
+.invalid-month-error #month-error {
+    display: block;
+}
+
+/* Year error states */
+
+.year-error #year-label {
+    color: var(--Light-red);
+}
+
+.year-error #year-input {
+    border-color: var(--Light-red);
+}
+
+.empty-year-error #empty-year {
+    display: block;
+}
+
+.invalid-year-error #year-error {
+    display: block;
+}
+
+/* End error states */
+
+#divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#divider-line {
+    height: 1px;
+    width: 80%;
+    background-color: var(--Light-grey);
+}
+
+#image-circle {
+    background-color: var(--Purple);
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#image-circle:hover {
+    cursor: pointer;
+    background-color: var(--Off-black);
+}
+
+#results-container {
+    font-weight: 800;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.result-value {
+    color: var(--Purple);
+}
